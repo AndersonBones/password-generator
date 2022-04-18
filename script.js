@@ -103,17 +103,15 @@ function No_box_checked(){
     
 }
 
-generate.addEventListener("submit", (e)=>{
-    e.preventDefault(); 
+generate_btn.addEventListener("click", ()=>{
     No_box_checked();
 
     if(NO_CHECKED == false){
-        Generate_passwrd(); 
+        Generate_passwrd();
     }
     else{
-        alert('Marque alguma caixa')
+        alert('Check at least one box')
     }
-    
     
 })
 
@@ -128,5 +126,6 @@ clipboard.addEventListener('click', () => {
 	textarea.select();
 	document.execCommand('copy');
 	textarea.remove();
+
 	alert('Password copied to clipboard');
 });
