@@ -1,4 +1,4 @@
-var generate = document.querySelector('form');
+var generate_btn = document.querySelector('#generate-btn');
 var passwrd_length = document.querySelector('#passwrd-length');
 var checkBox_input = document.querySelectorAll('input[type="checkbox"]');
 var passwrd_result = document.querySelector('#passwrd-result');
